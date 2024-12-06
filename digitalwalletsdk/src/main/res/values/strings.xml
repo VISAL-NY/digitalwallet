@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="pm_toolbar_title">Payment Method</string>
+    <string name="add_pm_toolbar_title">Add Payment Method</string>
+</resources>

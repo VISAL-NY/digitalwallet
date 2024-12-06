@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".presentation.AccountDetailActivity"
+    android:paddingHorizontal="20dp">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/account_detail_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="#00E91E63"
+            app:title=" ">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/account_detail_navigation_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/arrow_back_ios_24px"/>
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/account_detail_toolbar_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" Account Detail"/>
+
+        </androidx.appcompat.widget.Toolbar>
+        <View
+            android:id="@+id/account_detail_bottom_line"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#000000"
+            android:layout_marginBottom="10dp"/>
+
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingHorizontal="20dp">
+            <FrameLayout
+                android:id="@+id/acc_detail_bg_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#2196F3">
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:src="@drawable/baseline_credit_card_24"/>
+            </FrameLayout>
+            <Space
+                android:layout_width="10dp"
+                android:layout_height="0dp"/>
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/acc_detail_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Digital Wallet"/>
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="20dp"/>
+        <FrameLayout
+            android:id="@+id/account_detail_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#C66C6C"
+            android:layout_marginHorizontal="20dp">
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:padding="20dp">
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_weight="3">
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/acc_detail_id_text"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="Wallet Id "
+                        android:layout_weight="1"/>
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text=":"
+                        android:layout_weight="1"/>
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/acc_detail_id_value"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="0000000012"
+                        android:layout_weight="1"/>
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+                <Space
+                    android:layout_width="0dp"
+                    android:layout_height="10dp"/>
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_weight="3">
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/acc_detail_amount_text"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="Wallet Id "
+                        android:layout_weight="1"/>
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text=":"
+                        android:layout_weight="1"/>
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/acc_detail_amount_value"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="0000000012"
+                        android:layout_weight="1"/>
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+                <Space
+                    android:layout_width="0dp"
+                    android:layout_height="10dp"/>
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_weight="3">
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/acc_detail_currency_text"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="Wallet Id "
+                        android:layout_weight="1"/>
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text=":"
+                        android:layout_weight="1"/>
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/acc_detail_currency_value"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="0000000012"
+                        android:layout_weight="1"/>
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+        </FrameLayout>
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="20dp"/>
+
+        <FrameLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginHorizontal="20dp">
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/set_default_container"
+                android:layout_width="140dp"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:gravity="center"
+                android:background="#03A9F4"
+                android:orientation="horizontal"
+                >
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/acc_detail_default_icon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/verified_24px"/>
+                <Space
+                    android:layout_width="5dp"
+                    android:layout_height="0dp"/>
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/acc_detail_default"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Set Detault"/>
+            </androidx.appcompat.widget.LinearLayoutCompat>
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/disable_acc_container"
+                android:layout_width="140dp"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:gravity="center"
+                android:background="#03A9F4"
+                android:layout_gravity="right"
+                android:orientation="horizontal">
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/acc_detail_disable_icon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/unpublished_24px"/>
+                <Space
+                    android:layout_width="5dp"
+                    android:layout_height="0dp"/>
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/acc_detail_disable"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Disable"/>
+            </androidx.appcompat.widget.LinearLayoutCompat>
+        </FrameLayout>
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="20dp"/>
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/button_topup"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="Top up"
+            android:textAllCaps="false"
+            android:layout_marginHorizontal="20dp"
+            />
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/transacton_bottomsheet"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="#3F51B5"
+        app:layout_behavior="com.google.android.material.bottomsheet.BottomSheetBehavior">
+        <View
+            android:id="@+id/tran_indicator"
+            android:layout_width="60dp"
+            android:layout_height="5dp"
+            android:background="@android:color/darker_gray"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="8dp"/>
+       <androidx.recyclerview.widget.RecyclerView
+           android:id="@+id/tran_item_recyclerView"
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:fitsSystemWindows="true"
+          />
+    </androidx.appcompat.widget.LinearLayoutCompat>
+    <FrameLayout
+        android:id="@+id/acc_detail_container_progressbar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#00000000">
+        <ProgressBar
+            android:id="@+id/acc_detail_progressbar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            />
+    </FrameLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
